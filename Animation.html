@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .block {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      animation: move 6s infinite linear forwards;
+    }
+    .rotate {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(68, 0, 255);
+      animation: rotate 6s infinite linear forwards;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+        background-color: bisque;
+      }
+      10% {
+        transform: rotate(10deg);
+        background-color: black;
+      }
+      20% {
+        transform: rotate(20deg);
+        background-color: brown;
+      }
+      30% {
+        transform: rotate(30deg);
+        background-color: chartreuse;
+      }
+      40% {
+        transform: rotate(40deg);
+        background-color: tomato;
+      }
+      50% {
+        transform: rotate(50deg);
+        background-color: yellow;
+      }
+    }
+
+    @keyframes move {
+      /* from {
+        transform: translateX(50%);
+        transform: rotate(80deg);
+      }
+      to {
+        transform: translateX(100%);
+        transform: scale(2);
+      } */
+      0% {
+        transform: translateX(0%);
+      }
+      10% {
+        transform: translateX(400%);
+      }
+      20% {
+        transform: translateY(50%);
+      }
+      40% {
+        border-radius: 50%;
+      }
+      50% {
+        background-color: teal;
+        background-color: chocolate;
+      }
+      60% {
+        border-radius: 0;
+      }
+      70% {
+        box-shadow: 2px 2px 20px rgba(18, 18, 18, 0.5);
+      }
+    }
+  </style>
+  <body>
+    <div class="block"></div>
+    <div class="rotate"></div>
+  </body>
+</html>

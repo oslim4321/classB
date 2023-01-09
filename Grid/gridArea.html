@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .wrapper > * {
+      background-color: rgb(0, 255, 110);
+      padding: 20px;
+      color: white;
+    }
+    .wrapper > *:nth-child(even) {
+      background-color: rgb(49, 0, 156);
+    }
+    .wrapper {
+      max-width: 950px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 200px);
+      grid-auto-rows: minmax(100px, auto);
+      gap: 10px;
+      grid-template-areas:
+        "header header header header"
+        "aside aside main main"
+        "aside aside main main"
+        "nav nav nav nav"
+        "section section section section"
+        "section section section section"
+        "footer footer footer footer"
+        "footer footer footer footer";
+    }
+    header {
+      grid-area: header;
+    }
+    main {
+      grid-area: main;
+    }
+    section {
+      grid-area: section;
+    }
+    aside {
+      grid-area: aside;
+    }
+    nav {
+      grid-area: nav;
+    }
+    footer {
+      grid-area: footer;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header>Header</header>
+      <main>Main</main>
+      <section>Section</section>
+      <aside>Aside</aside>
+      <nav>Nav</nav>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
