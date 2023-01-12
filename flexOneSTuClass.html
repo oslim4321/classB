@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container div {
+      padding: 60px;
+      background-color: green;
+      margin: 10px;
+      /* flex-grow: 1; */
+      /* flex-shrink: 2; */
+    }
+
+    .container {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      /* background-color: red; */
+      /* justify-content: space-evenly;
+      align-items: center; */
+      /* height: 100vh; */
+      flex-wrap: wrap;
+    }
+
+    .one {
+      /* flex-grow: 2;
+      flex-shrink: 1; */
+      flex: 1;
+    }
+    .two {
+      flex-grow: 6;
+      flex-shrink: 2;
+    }
+    .four {
+      flex: 2;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

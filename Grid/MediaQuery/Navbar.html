@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+    }
+    ul {
+      display: flex;
+      padding: 20px;
+    }
+    ul li {
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      list-style-type: none;
+      cursor: pointer;
+    }
+    button {
+      margin: 25px 20px;
+      display: none;
+    }
+
+    @media (max-width: 425px) {
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      button {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div><button>Tog</button></div>
+    </nav>
+  </body>
+</html>
